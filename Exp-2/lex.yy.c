@@ -351,8 +351,8 @@ static void yynoreturn yy_fatal_error ( const char* msg  );
 	(yy_hold_char) = *yy_cp; \
 	*yy_cp = '\0'; \
 	(yy_c_buf_p) = yy_cp;
-#define YY_NUM_RULES 9
-#define YY_END_OF_BUFFER 10
+#define YY_NUM_RULES 5
+#define YY_END_OF_BUFFER 6
 /* This struct is not used in this scanner,
    but its presence is necessary. */
 struct yy_trans_info
@@ -360,30 +360,28 @@ struct yy_trans_info
 	flex_int32_t yy_verify;
 	flex_int32_t yy_nxt;
 	};
-static const flex_int16_t yy_accept[35] =
+static const flex_int16_t yy_accept[13] =
     {   0,
-        0,    0,   10,    8,    9,    5,    4,    4,    8,    7,
-        8,    4,    3,    3,    3,    3,    3,    4,    6,    0,
-        7,    3,    3,    3,    1,    3,    3,    3,    3,    2,
-        3,    3,    3,    0
+        0,    0,    6,    4,    1,    1,    2,    3,    1,    2,
+        3,    0
     } ;
 
 static const YY_CHAR yy_ec[256] =
     {   0,
-        1,    1,    1,    1,    1,    1,    1,    1,    1,    2,
+        1,    1,    1,    1,    1,    1,    1,    1,    2,    3,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    3,    1,    1,    1,    1,    1,    1,    1,    3,
-        3,    4,    5,    3,    6,    7,    1,    8,    8,    8,
-        8,    8,    8,    8,    8,    8,    8,    1,    3,    9,
-       10,    1,    1,    1,   11,   11,   11,   11,   11,   11,
-       11,   11,   11,   11,   11,   11,   11,   11,   11,   11,
-       11,   11,   11,   11,   11,   11,   11,   11,   11,   11,
-        1,    1,    1,    1,   11,    1,   12,   11,   11,   11,
+        1,    2,    1,    1,    1,    1,    1,    1,    1,    1,
+        1,    1,    1,    1,    1,    1,    1,    4,    4,    4,
+        4,    4,    4,    4,    4,    4,    4,    1,    1,    1,
+        1,    1,    1,    1,    5,    5,    5,    5,    5,    5,
+        5,    5,    5,    5,    5,    5,    5,    5,    5,    5,
+        5,    5,    5,    5,    5,    5,    5,    5,    5,    5,
+        1,    1,    1,    1,    5,    1,    5,    5,    5,    5,
 
-       13,   14,   11,   15,   16,   11,   11,   17,   11,   18,
-       19,   11,   11,   11,   20,   21,   11,   11,   22,   11,
-       11,   11,    3,    3,    3,    1,    1,    1,    1,    1,
+        5,    5,    5,    5,    5,    5,    5,    5,    5,    5,
+        5,    5,    5,    5,    5,    5,    5,    5,    5,    5,
+        5,    5,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
@@ -400,51 +398,33 @@ static const YY_CHAR yy_ec[256] =
         1,    1,    1,    1,    1
     } ;
 
-static const YY_CHAR yy_meta[23] =
+static const YY_CHAR yy_meta[6] =
     {   0,
-        1,    1,    1,    1,    1,    1,    1,    2,    1,    1,
-        2,    2,    2,    2,    2,    2,    2,    2,    2,    2,
-        2,    2
+        1,    2,    2,    3,    4
     } ;
 
-static const flex_int16_t yy_base[36] =
+static const flex_int16_t yy_base[16] =
     {   0,
-        0,    0,   48,   49,   49,   49,   49,   42,   38,   16,
-       35,   34,    0,   26,   25,   11,   26,   49,   32,   31,
-       19,    0,   18,   18,    0,   15,   19,   21,   21,    0,
-       15,   10,   17,   49,   26
+        0,    0,   10,   11,    0,    0,    0,    0,    0,    0,
+        0,   11,    7,    5,    3
     } ;
 
-static const flex_int16_t yy_def[36] =
+static const flex_int16_t yy_def[16] =
     {   0,
-       34,    1,   34,   34,   34,   34,   34,   34,   34,   34,
-       34,   34,   35,   35,   35,   35,   35,   34,   34,   34,
-       34,   35,   35,   35,   35,   35,   35,   35,   35,   35,
-       35,   35,   35,    0,   34
+       12,    1,   12,   12,   13,   13,   14,   15,   13,   14,
+       15,    0,   12,   12,   12
     } ;
 
-static const flex_int16_t yy_nxt[72] =
+static const flex_int16_t yy_nxt[17] =
     {   0,
-        4,    5,    6,    7,    8,    7,    9,   10,   11,   12,
-       13,   13,   14,   15,   13,   16,   13,   13,   13,   13,
-       13,   17,   20,   21,   25,   20,   21,   22,   26,   25,
-       30,   33,   32,   25,   31,   30,   29,   28,   19,   19,
-       27,   24,   23,   18,   18,   19,   18,   34,    3,   34,
-       34,   34,   34,   34,   34,   34,   34,   34,   34,   34,
-       34,   34,   34,   34,   34,   34,   34,   34,   34,   34,
-       34
+        4,    5,    6,    7,    8,   11,   11,   10,    9,   12,
+        3,   12,   12,   12,   12,   12
     } ;
 
-static const flex_int16_t yy_chk[72] =
+static const flex_int16_t yy_chk[17] =
     {   0,
-        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    1,   10,   10,   16,   21,   21,   35,   16,   33,
-       32,   31,   29,   28,   27,   26,   24,   23,   20,   19,
-       17,   15,   14,   12,   11,    9,    8,    3,   34,   34,
-       34,   34,   34,   34,   34,   34,   34,   34,   34,   34,
-       34,   34,   34,   34,   34,   34,   34,   34,   34,   34,
-       34
+        1,    1,    1,    1,    1,   15,   15,   14,   13,    3,
+       12,   12,   12,   12,   12,   12
     } ;
 
 static yy_state_type yy_last_accepting_state;
@@ -461,11 +441,49 @@ int yy_flex_debug = 0;
 #define YY_MORE_ADJ 0
 #define YY_RESTORE_YY_MORE_OFFSET
 char *yytext;
-#line 1 "token-count_1.l"
-#line 3 "token-count_1.l"
-int n = 0 ; 
-#line 468 "lex.yy.c"
-#line 469 "lex.yy.c"
+#line 1 "Symbol-table.l"
+#line 2 "Symbol-table.l"
+#include<stdio.h>
+#include<string.h>
+#include<stdlib.h>
+
+#define MAX_SYMBOLS 100
+
+typedef struct
+{
+	char name[100];
+	int declared;
+}Symbol;
+Symbol symbol_table[MAX_SYMBOLS];
+int symbol_count = 0;
+int symbol_exists(char* name)
+{
+	for(int i=0;i<symbol_count;i++)
+	{
+		if (strcmp(symbol_table[i].name,name)==0)
+			return 1;
+	}
+	return 0;
+}
+void add_symbol(char* name)
+{
+	if (symbol_exists(name)==0&&symbol_count<MAX_SYMBOLS)
+	{
+		strcpy(symbol_table[symbol_count].name,name);
+		symbol_table[symbol_count].declared =1;
+		symbol_count++;
+	}
+}
+void print_symbol_table()
+{
+	printf("Symbol Table: \n");
+	for(int i =0;i<symbol_count;i++)
+	{
+		printf("Name : %s, Declared : %d\n",symbol_table[i].name,symbol_table[i].declared);
+	}
+}
+#line 486 "lex.yy.c"
+#line 487 "lex.yy.c"
 
 #define INITIAL 0
 
@@ -682,10 +700,10 @@ YY_DECL
 		}
 
 	{
-#line 6 "token-count_1.l"
+#line 43 "Symbol-table.l"
 
 
-#line 689 "lex.yy.c"
+#line 707 "lex.yy.c"
 
 	while ( /*CONSTCOND*/1 )		/* loops until end-of-file is reached */
 		{
@@ -712,13 +730,13 @@ yy_match:
 			while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 				{
 				yy_current_state = (int) yy_def[yy_current_state];
-				if ( yy_current_state >= 35 )
+				if ( yy_current_state >= 13 )
 					yy_c = yy_meta[yy_c];
 				}
 			yy_current_state = yy_nxt[yy_base[yy_current_state] + yy_c];
 			++yy_cp;
 			}
-		while ( yy_base[yy_current_state] != 49 );
+		while ( yy_base[yy_current_state] != 11 );
 
 yy_find_action:
 		yy_act = yy_accept[yy_current_state];
@@ -743,51 +761,32 @@ do_action:	/* This label is used only to access EOF actions. */
 			goto yy_find_action;
 
 case 1:
+/* rule 1 can match eol */
 YY_RULE_SETUP
-#line 8 "token-count_1.l"
-{n++;printf("\t keywords : %s", yytext);} 
+#line 45 "Symbol-table.l"
+
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 10 "token-count_1.l"
-{n++;printf("\t keywords : %s", yytext);} 
+#line 46 "Symbol-table.l"
+
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 12 "token-count_1.l"
-{n++;printf("\t identifier : %s", yytext);} 
+#line 47 "Symbol-table.l"
+{ add_symbol(yytext); }
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 14 "token-count_1.l"
-{n++;printf("\t operator : %s", yytext);} 
+#line 49 "Symbol-table.l"
+
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 16 "token-count_1.l"
-{n++;printf("\t separator : %s", yytext);} 
-	YY_BREAK
-case 6:
-YY_RULE_SETUP
-#line 18 "token-count_1.l"
-{n++;printf("\t float : %s", yytext);} 
-	YY_BREAK
-case 7:
-YY_RULE_SETUP
-#line 20 "token-count_1.l"
-{n++;printf("\t integer : %s", yytext);}						 
-	YY_BREAK
-case 8:
-YY_RULE_SETUP
-#line 22 "token-count_1.l"
-; 
-	YY_BREAK
-case 9:
-YY_RULE_SETUP
-#line 23 "token-count_1.l"
+#line 51 "Symbol-table.l"
 ECHO;
 	YY_BREAK
-#line 791 "lex.yy.c"
+#line 790 "lex.yy.c"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 
@@ -1084,7 +1083,7 @@ static int yy_get_next_buffer (void)
 		while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 			{
 			yy_current_state = (int) yy_def[yy_current_state];
-			if ( yy_current_state >= 35 )
+			if ( yy_current_state >= 13 )
 				yy_c = yy_meta[yy_c];
 			}
 		yy_current_state = yy_nxt[yy_base[yy_current_state] + yy_c];
@@ -1112,11 +1111,11 @@ static int yy_get_next_buffer (void)
 	while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 		{
 		yy_current_state = (int) yy_def[yy_current_state];
-		if ( yy_current_state >= 35 )
+		if ( yy_current_state >= 13 )
 			yy_c = yy_meta[yy_c];
 		}
 	yy_current_state = yy_nxt[yy_base[yy_current_state] + yy_c];
-	yy_is_jam = (yy_current_state == 34);
+	yy_is_jam = (yy_current_state == 12);
 
 		return yy_is_jam ? 0 : yy_current_state;
 }
@@ -1792,22 +1791,35 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 23 "token-count_1.l"
+#line 51 "Symbol-table.l"
 
-int yywrap(void)
+
+int main(int argc,char **argv)
+{
+	if(argc>1)
+	{
+		FILE *input_file = fopen(argv[1], "r");
+		if(input_file)
+		{
+			yyin =input_file;
+			yylex();
+			fclose(input_file);
+		}
+		else
+			fprintf(stderr, "could not open file %s\n",argv[1]);
+	}
+	else 
+	{
+		printf("Please provide an input file.\n");
+		return 1;
+	}
+	print_symbol_table();
+	return 0;
+}
+int yywrap()
 {
 	return 1;
 }
-
-int main() 
-
-{ 
-	freopen("test.c","r",stdin);
-	yylex(); 
 	
-	printf("\n total no. of token = %d\n", n); 
-	return 0;
 	
-} 
-
 
